@@ -1,0 +1,220 @@
+.cls-1, .cls-2 { fill: none; stroke-width: 2px; }
+.cls-1 {stroke: #000;}
+.cls-1, .cls-2, .cls-3 {fill-rule: evenodd;}
+.cls-2 {stroke: #000;}
+.cls-3, .cls-4 {fill: #000;}
+.cls-1b, .cls-2b { fill: none;stroke-width: 2px; }
+.cls-1b { stroke: #fff;}
+.cls-1b, .cls-2b, .cls-3b {fill-rule: evenodd; }
+.cls-2b { stroke: #fff; }
+.cls-3b, .cls-4b {  fill: #fff;}
+.container{
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+.hero{
+    background-image: url(./img/hero-bg.jpg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1072px;
+    padding-top: 285px;
+    text-align: center;
+    color: #ffffff;
+}
+.hero__info{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.hero__logo{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    fill: #ffffff;
+}
+
+.title{
+    font-weight: 700;
+    color: inherit;
+}
+.hero__title{
+    font-size: 54px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    animation: grow 2s ease 1;
+  }
+  @keyframes grow {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+.info__text{
+    font-size: 16px;
+    font-weight: 300;
+    color: inherit;
+    margin-top: 35px;
+}
+.hero__text{
+    font-size: 15px;
+    font-weight: 400;
+    color: inherit; 
+    text-transform: uppercase;
+}
+.scroll{
+    margin-top: 240px;
+    font-size: 45px;
+}
+.scroll:hover {
+    transform: scale(1.1 1.1);
+    animation: mi 1s ease infinite;
+  }
+  @keyframes mi {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+  }
+.info{
+    max-width: 900px;
+    margin: 100px auto;
+    text-align: center;
+    border: 1px solid  #3c3c3c;
+    padding: 30px 170px;
+   }
+.About-Us{
+color:#3c3c3c;
+}
+.section-title{
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: translate(0, -50px);
+    background-color: #ffffff;
+}
+.services{
+    background-image: url(./img/services.jpg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 488px;
+    color: #ffffff;
+    padding-top: 100px;
+}
+.services__info{
+    border-bottom: 1px solid  #ffffff;
+    border-right: 1px solid  #ffffff;
+    border-left: 1px solid  #ffffff;
+    border-top: none;
+    position: relative;
+}
+.services__section-title{
+    background-color: transparent;
+}
+.services__info:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 170px;
+    background-color: #ffffff;
+}
+.services__info:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 170px;
+    background-color: #ffffff;
+}
+.what-we-do{
+    color: #3c3c3c;
+}
+.what-we-do__list{
+    list-style: none;
+}
+.what-we-do__item{
+    margin-top: 100px;
+}
+.item-title{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.icon{
+    font-size: 84px;
+}
+.icon:hover{
+    color: turquoise;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px 8px;
+}
+.works__img{
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.works{
+    position: relative;
+    z-index: 0;
+}
+.works:hover {
+    animation: hithere 1s ease 1;
+    z-index: 2;
+  }
+  @keyframes hithere {
+    30% { transform: scale(1); }
+    40%, 60% { transform: rotate(-20deg) scale(0.9); }
+    50% { transform: rotate(20deg) scale(0.9); }
+    70% { transform: rotate(0deg) scale(0.9); }
+    100% { transform: scale(1); }
+  }
+.works__title{
+    position: absolute;
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    z-index: 1;
+    bottom: 40px;
+    left: 40px;
+    text-transform: uppercase;
+}
+.contact{
+    color: #3c3c3c;
+}
+.contact__btn{
+    width: 395px;
+    height: 58px;
+    border: 2px solid #3c3c3c;
+    background-color: #3c3c3c;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Lato;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.contact__btn:hover{
+    border: 2px solid #3c3c3c;
+    background-color: #fff;
+    color: #3c3c3c;
+}
+.footer{
+    color: #3c3c3c;
+    font-size: 14px;
+    height: 100px;
+    text-align: center;
+}
+.footer__logo {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
