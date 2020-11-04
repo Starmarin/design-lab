@@ -296,6 +296,8 @@
     }
 }
 @media screen and (max-width: 320px){
+    .container{
+        font-size: 9px;}
     .hero__info{
         max-width:90%;}
         .info:before{
