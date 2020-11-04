@@ -287,6 +287,8 @@
         text-transform: uppercase;
         transform: translate(0, -120%);
     }
+    .item-title{
+        font-size: 1.3rem;}
     .info:before{
         width: 20%;
     }
@@ -296,9 +298,7 @@
     }
 }
 @media screen and (max-width: 320px){
-    .container{
-        font-size: 9px;}
-    .hero__info{
+        .hero__info{
         max-width:90%;}
         .info:before{
             width: 15%;
